@@ -4,7 +4,7 @@
   "description": "Construindo uma API Restful de Vendas Javascript com Node.js, Express, Typescript, TypeORM, Postgres, Redis, Docker etc.",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
+    "start": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
     "lint": "eslint . --ext .ts",
     "lint-fix": "eslint . --ext .ts --fix"
   },

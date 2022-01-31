@@ -7,7 +7,7 @@ interface IRquest {
   id: string;
 }
 class ShowProductService {
-  public async execute({ id }: IRquest): Promise<Product | undefined> {
+  public async execute({ id }: IRquest): Promise<Product> {
     const productsRepository = getCustomRepository(ProductRepository);
 
     const product = await productsRepository.findOne(id);

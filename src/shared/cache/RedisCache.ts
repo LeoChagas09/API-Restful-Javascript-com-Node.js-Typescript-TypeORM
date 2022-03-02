@@ -32,4 +32,5 @@ class RedisCache {
     await this.client.del(key);
   }
 }
+
 export default new RedisCache();

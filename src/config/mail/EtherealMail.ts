@@ -14,6 +14,7 @@ interface IParseMailTemplate {
   file: string;
   variables: ITemplateVariable;
 }
+
 interface ISendMail {
   to: IMailContact;
   from?: IMailContact;
